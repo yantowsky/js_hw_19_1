@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: lightgrey;
+  padding: 50px;
+}
+
+img {
+  width: 150px;
+}
+
+svg {
+  width: 150px;
+}
+
+.weather-widget {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgb(61, 75, 228);
+  border-radius: 30px;
+  box-shadow: 5px 10px 7px gray;
+  user-select: none;
+}
+
+.weather-city-name {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.weather-info-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+
+  .info-date {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .info-time {
+    font-size: 2.6rem;
+  }
+}
+
+.weather-state {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+
+  .weather-state-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    #temp {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.weather-info-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.info-add-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: black;
+  font-weight: 600;
+}
+
+.weather-update-btn {
+  cursor: pointer;
+}
+
+.weather-update-btn:active {
+  color: #eb6e4b;
+}
